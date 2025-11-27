@@ -1,6 +1,5 @@
 from django.apps import AppConfig
 
-
 class ApprenderConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'apprender'
+    default_auto_field='django.db.models.BigAutoField'
+    name='apprender'

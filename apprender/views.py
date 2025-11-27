@@ -1,6 +1,5 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
-def index(request):
-    return render(request, 'apprender/index.html')
-
+def home(request):
+    return HttpResponse('Proyecto desplegado correctamente en Render 🚀')
+    

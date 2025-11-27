@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: pdesplieguej
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn prjrender.wsgi:application"
+    envVars:
+      - key: DEBUG
+        value: "False"
